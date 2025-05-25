@@ -1,0 +1,58 @@
+# Streamlit + Graphs
+streamlit>=1.44.1
+streamlit-nested-layout>=0.1.4
+streamlit-authenticator>=0.4.2
+
+# DataAnalysis + Databases
+pandas>=2.2.3
+numpy>=2.2.4
+
+
+# Graphs
+plotly>=6.0.1
+networkx>=3.4.2
+seaborn>=0.13.2
+matplotlib>=3.10.1
+
+#Database
+psycopg2-binary>=2.9.10
+SQLAlchemy>=2.0.40
+alembic>=1.15.2
+
+# WEB
+requests>=2.31.0
+selenium>=4.31.0
+
+# Clients
+pynetbox==7.2.0 # Due to NetBox in infra being v3.6.5 - see https://github.com/netbox-community/pynetbox
+elasticsearch==8.17.1  # Change based on your version of Elasticsearch
+thehive4py==1.8.2  # Last version compatible with TheHive 4.0
+
+
+# Environment
+python-dotenv>=1.1.0
+
+# MITRE ATT&CK
+stix2>=3.0.1
+
+# Logging
+loguru>=0.7.2
+
+# WinRM + PsExec
+pypsrp>=0.8.0
+pypsexec>=0.3.0
+
+
+# Utils
+PyYAML>=6.0.0
+
+# HVAC
+hvac>=2.3.0
+hvac[parser]>=2.3.0
+
+
+# Reporting
+reportlab>=4.4.0
+reportlab[pycairo]>=4.4.0
+
+

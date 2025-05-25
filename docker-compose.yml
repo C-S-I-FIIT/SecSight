@@ -1,0 +1,35 @@
+  
+services:
+
+  report_app:
+    container_name: report_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: report_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    restart: unless-stopped
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/data/postgres
+      o: bind

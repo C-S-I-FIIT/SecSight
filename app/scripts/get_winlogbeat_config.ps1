@@ -1,0 +1,1 @@
+$winlogbeatConfigPath = ((Get-CimInstance -ClassName Win32_Service -Filter "Name='winlogbeat'").PathName -split '"')[1] -replace '\\[^\\]*$',''; Get-Content "$winlogbeatConfigPath\winlogbeat.yml"

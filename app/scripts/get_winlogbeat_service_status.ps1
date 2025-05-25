@@ -1,0 +1,1 @@
+ if (Get-Service -Name "winlogbeat" -ErrorAction SilentlyContinue) { Get-Service -Name "winlogbeat" | Select-Object Status | ConvertTo-Json } else { [PSCustomObject]@{Status=0} | ConvertTo-Json }

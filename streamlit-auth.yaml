@@ -1,0 +1,11 @@
+credentials:
+  usernames:
+    xstrbol:
+      email: xstrbol@stuba.sk
+      name: xstrbol
+      password: <HASHED-PASS>
+cookie:
+  expiry_days: 0
+  key:  # Must be string
+  name: 
+  # Look at streamlit-auth docs

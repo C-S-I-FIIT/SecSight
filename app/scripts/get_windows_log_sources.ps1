@@ -1,0 +1,1 @@
+Get-WinEvent -ListLog * | Select-Object LogName, LogMode, MaximumSizeInBytes, RecordCount, IsEnabled | ConvertTo-Json

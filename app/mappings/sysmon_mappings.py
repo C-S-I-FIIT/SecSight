@@ -1,0 +1,33 @@
+sysmon_event_mappings = {
+    "Microsoft-Windows-Sysmon/Operational": {
+        "process_creation": [1],
+        "file_creation_time_change": [2],
+        "network_connection": [3],
+        "service_state_change": [4],
+        "process_terminate": [5],
+        "driver_load": [6],
+        "image_load": [7],
+        "create_remote_thread": [8],
+        "raw_access_read": [9],
+        "process_access": [10],
+        "file_create": [11],
+        "registry_add": [12],
+        "registry_set": [13],
+        "registry_rename": [14],
+        "file_stream_create": [15],
+        "configuration_change": [16],
+        "pipe_created": [17],
+        "pipe_connected": [18],
+        "wmi_filter": [19],
+        "wmi_consumer": [20],
+        "wmi_consumer_filter": [21],
+        "dns_query": [22],
+        "file_delete": [23],
+        "clipboard_change": [24],
+        "process_tampering": [25],
+        "file_delete_detected": [26],
+        "file_block_executable": [27],
+        "file_block_shredding": [28],
+        "file_executable_detected": [29]
+    }
+} 
