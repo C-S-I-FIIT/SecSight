@@ -4,11 +4,11 @@
   <img src="assets/logo_secsight.png" alt="SecSight Logo" width="300"/>
 </p>
 
-SecSight is a security monitoring and analysis dashboard built with Streamlit. It integrates various security tools and data sources to provide a unified view of organisation security posture.
+SecSight is a security monitoring and analysis dashboard built with `Streamlit` framework. It integrates various security tools and data sources to provide a unified view of organisation security posture.
 
 The main feature of this project is monitoring of Windows endpoint rule compliance, detection of unnecessary log channels, log channels that are sending logs to SIEM ans which rules are covered and whcih log channels are not enabled and which rules are not covered. 
 
-All data views are presented by `Streamlit` framework.
+This is a novel approach to tunning and fine-tunning Windows environments which are monitored, to achieve the most host-rule coverage. In the existing solutions we cannot determine which hosts are compliant with defined rule set and which are not.
 
 ## Features
 
